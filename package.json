@@ -1,0 +1,31 @@
+{
+  "name": "chauffeur-cli",
+  "version": "0.1.0",
+  "description": "A minimal Codex-style terminal coding agent scaffold.",
+  "type": "module",
+  "bin": {
+    "chauffeur": "./dist/cli.js"
+  },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chalk": "^5.4.1",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "execa": "^9.5.2",
+    "openai": "^4.77.0",
+    "prompts": "^2.4.2",
+    "zod": "^3.24.1",
+    "zod-to-json-schema": "^3.25.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@types/prompts": "^2.4.9",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
