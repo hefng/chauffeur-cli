@@ -3,12 +3,25 @@
   "version": "0.1.0",
   "description": "A minimal Codex-style terminal coding agent scaffold.",
   "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hefng/chauffeur-cli.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
   "bin": {
     "chauffeur": "./dist/cli.js"
   },
   "scripts": {
     "dev": "tsx src/cli.ts",
     "build": "tsc",
+    "prepack": "npm run build",
     "start": "node dist/cli.js",
     "typecheck": "tsc --noEmit"
   },
