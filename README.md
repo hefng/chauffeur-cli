@@ -27,8 +27,8 @@ CHAUFFEUR_MODEL=gpt-4.1-mini
 说明：
 
 - `CHAUFFEUR_API_KEY` 必填
-- `CHAUFFEUR_BASE_URL` 可选，不填则使用 SDK 默认端点
-- `CHAUFFEUR_MODEL` 可选
+- `CHAUFFEUR_BASE_URL` 必填
+- `CHAUFFEUR_MODEL` 必填
 
 如果你习惯用 `.env`，也可以复制示例文件：
 
